@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    image: my_menu:latest
+    container_name: sdc_web_api
+    command: >
+      sh -c "
+      alembic upgrade head &&
+      uvicorn app.main:app --host=0.0.0.0
+      "
+    ports:
+      - 8080:8000
+    env_file:
+      - .env.compose
+

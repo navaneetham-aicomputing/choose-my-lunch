@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "my_lunch"
+version = "0.0.1"
+description = "base description"
+authors = ["my-lunch <navaneetham@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.12"
+aiopg = "^1.1.0"
+gunicorn = "^20.0.4"
+six = "^1.15.0"
+SQLAlchemy = "^1.4.7"
+python-multipart = "^0.0.5"
+jwcrypto = "^1.0"
+alembic = "^1.7.7"
+aiosqlite = "^0.17.0"
+greenlet = "^1.1.2"
+passlib = "^1.7.4"
+bcrypt = "^3.2.0"
+python-jose = "^3.3.0"
+uvloop = "^0.16.0"
+fastapi = "^0.75.2"
+httptools = "^0.4.0"
+uvicorn = "^0.17.6"
+httpx = "^0.22.0"
+
+[tool.poetry.dev-dependencies]
+fakeredis = "^1.4.5"
+isort = "^5.7.0"
+pytest-env = "^0.6.2"
+pytest-mock = "^3.5.1"
+requests = "^2.25.1"
+factory-boy = "^3.2.0"
+pytest = "^7.1.2"
+pytest-asyncio = "^0.18.3"
+pytest-cov = "^3.0.0"
+flake8 = "^4.0.1"
+
+[tool.isort]
+line_length = "120"
+multi_line_output = "3"
+include_trailing_comma = "True"
+atomic = "True"
+skip_gitignore = "True"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

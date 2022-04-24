@@ -38,6 +38,7 @@ installed on your computer.
 ### Build & run docker image
 
 ```sh
+$ cp env.compose.example .env.compose
 $ docker build -t my_menu:0.1 .
 $ docker-compose up
 ```
